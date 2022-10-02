@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wzc.teamdemo.mapper.StuMapper">
+
+    <resultMap id="BaseResultMap" type="com.wzc.teamdemo.pojo.Stu">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="password" column="password" jdbcType="VARCHAR"/>
+            <result property="sex" column="sex" jdbcType="INTEGER"/>
+            <result property="phone" column="phone" jdbcType="VARCHAR"/>
+            <result property="grade" column="grade" jdbcType="VARCHAR"/>
+            <result property="class" column="class" jdbcType="VARCHAR"/>
+            <result property="num" column="num" jdbcType="VARCHAR"/>
+            <result property="des" column="des" jdbcType="VARCHAR"/>
+            <result property="deptId" column="dept_id" jdbcType="INTEGER"/>
+            <result property="proId" column="pro_id" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,password,
+        sex,phone,grade,
+        class,num,des,
+        dept_id,pro_id
+    </sql>
+</mapper>

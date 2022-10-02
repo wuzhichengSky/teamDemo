@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wzc.teamdemo.mapper.ProMapper">
+
+    <resultMap id="BaseResultMap" type="com.wzc.teamdemo.pojo.Pro">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="des" column="des" jdbcType="VARCHAR"/>
+            <result property="begin" column="begin" jdbcType="DATE"/>
+            <result property="end" column="end" jdbcType="DATE"/>
+            <result property="status" column="status" jdbcType="VARCHAR"/>
+            <result property="manager" column="manager" jdbcType="VARCHAR"/>
+            <result property="instructor" column="instructor" jdbcType="VARCHAR"/>
+            <result property="capt" column="capt" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,des,begin,
+        end,status,manager,
+        instructor,capt
+    </sql>
+</mapper>
